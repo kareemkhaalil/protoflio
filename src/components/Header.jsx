@@ -55,12 +55,12 @@ const Header = () => {
               }}
               className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
             >
-              Portfolio
+              Kareem Khalil
             </a>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8 rtl:space-x-reverse">
+          <nav className="hidden lg:flex items-center gap-x-8 rtl:gap-x-reverse">
             {navItems.map((item) => (
               <a
                 key={item.key}

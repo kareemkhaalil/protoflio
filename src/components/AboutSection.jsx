@@ -2,42 +2,26 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { motion } from 'framer-motion';
 import { Code, Palette, Smartphone, Globe, Zap, Users } from 'lucide-react';
+import { aboutData } from '../data/aboutData'; // استيراد البيانات الجديدة
 
 const AboutSection = () => {
-  const { t, isRTL } = useLanguage();
+  const { language, isRTL } = useLanguage();
+  const currentAboutData = aboutData[language]; // اختيار البيانات حسب اللغة
 
-  const skills = [
-    {
-      icon: Code,
-      title: isRTL ? 'تطوير الويب' : 'Web Development',
-      description: isRTL ? 'إنشاء مواقع ويب حديثة وسريعة' : 'Creating modern and fast websites'
-    },
-    {
-      icon: Smartphone,
-      title: isRTL ? 'التصميم المتجاوب' : 'Responsive Design',
-      description: isRTL ? 'تصميم يعمل على جميع الأجهزة' : 'Design that works on all devices'
-    },
-    {
-      icon: Palette,
-      title: isRTL ? 'تصميم واجهات المستخدم' : 'UI/UX Design',
-      description: isRTL ? 'تصميم تجارب مستخدم استثنائية' : 'Designing exceptional user experiences'
-    },
-    {
-      icon: Globe,
-      title: isRTL ? 'تطوير متعدد اللغات' : 'Multilingual Development',
-      description: isRTL ? 'دعم اللغات المتعددة والـ RTL' : 'Multi-language and RTL support'
-    },
-    {
-      icon: Zap,
-      title: isRTL ? 'الأداء والسرعة' : 'Performance & Speed',
-      description: isRTL ? 'تحسين الأداء وسرعة التحميل' : 'Optimizing performance and loading speed'
-    },
-    {
-      icon: Users,
-      title: isRTL ? 'العمل الجماعي' : 'Team Collaboration',
-      description: isRTL ? 'العمل بفعالية ضمن فريق' : 'Working effectively within a team'
-    }
-  ];
+  const iconMap = {
+    'Web Development': Code,
+    'Responsive Design': Smartphone,
+    'UI/UX Design': Palette,
+    'Multilingual Development': Globe,
+    'Performance & Speed': Zap,
+    'Team Collaboration': Users,
+    'تطوير الويب': Code,
+    'التصميم المتجاوب': Smartphone,
+    'تصميم واجهات المستخدم': Palette,
+    'تطوير متعدد اللغات': Globe,
+    'الأداء والسرعة': Zap,
+    'العمل الجماعي': Users,
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -74,10 +58,10 @@ const AboutSection = () => {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('aboutTitle')}
+              {currentAboutData.title}
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              {t('aboutDescription')}
+              {currentAboutData.description}
             </p>
           </motion.div>
 
@@ -86,31 +70,34 @@ const AboutSection = () => {
             variants={containerVariants}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {skills.map((skill, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="group"
-              >
-                <div className="bg-card border border-border rounded-lg p-6 h-full hover:shadow-lg hover:border-primary/20 transition-all duration-300 group-hover:scale-105">
-                  <div className="flex items-center mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-                      <skill.icon className="h-6 w-6 text-primary" />
+            {currentAboutData.sections.map((skill, index) => {
+              const IconComponent = iconMap[skill.title];
+              return (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  className="group"
+                >
+                  <div className="bg-card border border-border rounded-lg p-6 h-full hover:shadow-lg hover:border-primary/20 transition-all duration-300 group-hover:scale-105">
+                    <div className="flex items-center mb-4">
+                      <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                        {IconComponent && <IconComponent className="h-6 w-6 text-primary" />}
+                      </div>
                     </div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">
+                      {skill.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {skill.description}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    {skill.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {skill.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </motion.div>
 
           {/* Stats Section */}
-          <motion.div
+          {/* <motion.div
             variants={itemVariants}
             className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8"
           >
@@ -129,7 +116,7 @@ const AboutSection = () => {
                 </div>
               </div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
@@ -137,4 +124,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-

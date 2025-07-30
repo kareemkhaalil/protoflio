@@ -21,7 +21,7 @@ const translations = {
     
     // Hero Section
     welcome: 'مرحباً بك في موقعي',
-    heroTitle: 'مطور ويب محترف',
+    heroTitle: 'مطور تقني يقود الفكرة من التصميم للتنفيذ',
     heroSubtitle: 'أقوم بإنشاء مواقع ويب حديثة وتطبيقات تفاعلية باستخدام أحدث التقنيات',
     viewWork: 'شاهد أعمالي',
     contactMe: 'تواصل معي',
@@ -60,7 +60,7 @@ const translations = {
     
     // Hero Section
     welcome: 'Welcome to my website',
-    heroTitle: 'Professional Web Developer',
+    heroTitle: 'From Idea to Execution | Tech That Delivers',
     heroSubtitle: 'I create modern websites and interactive applications using the latest technologies',
     viewWork: 'View My Work',
     contactMe: 'Contact Me',

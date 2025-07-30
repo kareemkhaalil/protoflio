@@ -22,7 +22,7 @@ const ContactSection = () => {
   });
 
   // يمكن تخصيص رقم الواتساب هنا
-  const whatsappNumber = '+201234567890'; // استبدل برقمك الحقيقي
+  const whatsappNumber = '+201285122680'; // استبدل برقمك الحقيقي
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -36,15 +36,7 @@ const ContactSection = () => {
     e.preventDefault();
     
     // تكوين رسالة الواتساب
-    const message = `${isRTL ? 'مرحباً' : 'Hello'}!
-
-${isRTL ? 'الاسم' : 'Name'}: ${formData.name}
-${isRTL ? 'البريد الإلكتروني' : 'Email'}: ${formData.email}
-
-${isRTL ? 'الرسالة' : 'Message'}:
-${formData.message}
-
-${isRTL ? 'تم إرسال هذه الرسالة من موقع البورتفوليو' : 'This message was sent from the portfolio website'}`;
+    const message = `${isRTL ? 'مرحباً' : 'Hello'}!\n\n${isRTL ? 'الاسم' : 'Name'}: ${formData.name}\n${isRTL ? 'البريد الإلكتروني' : 'Email'}: ${formData.email}\n\n${isRTL ? 'الرسالة' : 'Message'}:\n${formData.message}\n\n${isRTL ? 'تم إرسال هذه الرسالة من موقع كريم خليل' : 'This message was sent from Kareem Khalil\'s portfolio website'}`;
 
     // إنشاء رابط الواتساب
     const whatsappUrl = `https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
@@ -64,8 +56,8 @@ ${isRTL ? 'تم إرسال هذه الرسالة من موقع البورتفو�
     {
       icon: Mail,
       title: isRTL ? 'البريد الإلكتروني' : 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com'
+      value: 'karem2003.kk@gmail.com',
+      href: 'mailto:karem2003.kk@gmail.com'
     },
     {
       icon: Phone,
@@ -76,7 +68,7 @@ ${isRTL ? 'تم إرسال هذه الرسالة من موقع البورتفو�
     {
       icon: MapPin,
       title: isRTL ? 'الموقع' : 'Location',
-      value: isRTL ? 'القاهرة، مصر' : 'Cairo, Egypt',
+      value: isRTL ? 'دمياط ، مصر' : 'Damietta, Egypt',
       href: '#'
     }
   ];
@@ -85,19 +77,19 @@ ${isRTL ? 'تم إرسال هذه الرسالة من موقع البورتفو�
     {
       icon: Github,
       name: 'GitHub',
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/kareemkhaalil/',
       color: 'hover:text-gray-900 dark:hover:text-gray-100'
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourusername',
+      href: 'https://linkedin.com/in/kareemahmedkhalil/',
       color: 'hover:text-blue-600'
     },
     {
       icon: Twitter,
       name: 'Twitter',
-      href: 'https://twitter.com/yourusername',
+      href: 'https://x.com/kareem__khalil',
       color: 'hover:text-blue-400'
     },
     {
@@ -257,7 +249,7 @@ ${isRTL ? 'تم إرسال هذه الرسالة من موقع البورتفو�
                   {isRTL ? 'تابعني على' : 'Follow Me'}
                 </h3>
                 
-                <div className="flex space-x-4 rtl:space-x-reverse">
+                <div className="flex gap-x-4 rtl:gap-x-reverse">
                   {socialLinks.map((social, index) => (
                     <a
                       key={index}

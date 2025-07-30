@@ -47,7 +47,7 @@ const Footer = () => {
     {
       icon: Mail,
       name: 'Email',
-      href: 'mailto:your.email@example.com',
+      href: 'mailto:karem2033.kk@gmail.com',
       color: 'hover:text-red-500'
     }
   ];
@@ -82,12 +82,12 @@ const Footer = () => {
                 transition={{ duration: 0.5 }}
               >
                 <h3 className="text-2xl font-bold text-primary mb-4">
-                  Portfolio
+                  Kareem Khalil
                 </h3>
                 <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">
                   {isRTL 
-                    ? 'مطور ويب محترف متخصص في إنشاء تجارب رقمية استثنائية باستخدام أحدث التقنيات والأدوات.'
-                    : 'Professional web developer specialized in creating exceptional digital experiences using the latest technologies and tools.'
+                    ? 'أصمّم وأطوّر وأقود تنفيذ منتجات رقمية عالية التأثير، تشمل المواقع والتطبيقات ولوحات التحكم، باستخدام أحدث التقنيات وبتركيز على النتائج الفعلية.'
+                    : 'I design, develop, and lead high-impact digital products—websites, mobile apps, and admin systems—built with modern technologies and focused on real-world results.'
                   }
                 </p>
                 
@@ -155,14 +155,14 @@ const Footer = () => {
                 <ul className="space-y-3">
                   <li className="flex items-center text-muted-foreground">
                     <Mail className={`w-4 h-4 ${isRTL ? 'ml-3' : 'mr-3'} text-primary`} />
-                    <a href="mailto:your.email@example.com" className="hover:text-primary transition-colors">
-                      your.email@example.com
+                    <a href="mailto:karem2003.kk@gmail.com" className="hover:text-primary transition-colors">
+                      karem2003.kk@gmail.com
                     </a>
                   </li>
                   <li className="flex items-center text-muted-foreground">
                     <MessageCircle className={`w-4 h-4 ${isRTL ? 'ml-3' : 'mr-3'} text-primary`} />
-                    <a href="https://wa.me/+201234567890" className="hover:text-primary transition-colors">
-                      +20 123 456 7890
+                    <a href="https://wa.me/+201285122680" className="hover:text-primary transition-colors">
+                      +201285122680
                     </a>
                   </li>
                 </ul>
@@ -181,7 +181,7 @@ const Footer = () => {
               transition={{ duration: 0.5 }}
               className="text-muted-foreground text-sm mb-4 sm:mb-0"
             >
-              © {new Date().getFullYear()} Portfolio. {t('allRightsReserved')}
+              © {new Date().getFullYear()} Kareem Khalil. {t('allRightsReserved')}
               <span className="inline-flex items-center mx-2">
                 {isRTL ? 'صُنع بـ' : 'Made with'}
                 <Heart className="w-4 h-4 text-red-500 mx-1" />
