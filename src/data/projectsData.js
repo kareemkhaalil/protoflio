@@ -807,7 +807,107 @@ export const projectsData = {
          
           "/mywork/abdullah/عبدالله-ياسر-عبدالله-العلاوي.webp"
         ]
-      }
+      }, 
+
+      {
+  "id": 7,
+  "title": "فيديو برومو توعوي عن متلازمة داون",
+  "description": "تحرير وإنتاج فيديو برومو احترافي لتوعية الجمهور عن متلازمة داون",
+  "image":     "/mywork/lamiaa/WhatsApp Image 2025-07-31 at 17.25.06_63dfa91f.jpg",
+  "category": "video editing",
+  "technologies": [
+    "Adobe Premiere Pro",
+    "After Effects",
+    "Photoshop",
+    "Illustrator",
+    "Adobe Audition",
+    "Motion Graphics",
+    "VFX"
+  ],
+  "liveUrl": "https://drive.google.com/drive/folders/1RJ0a1kSTAtLBkc-4pw3WU_JjGY4FgeiJ?usp=perview",
+  "githubUrl": "#",
+  "featured": false,
+  "client": " د/لمياء الرفاعي",
+  "duration": "2019",
+  "role": "محرر ومنتج فيديو",
+  "longDescription": "فيديو برومو توعوي تم تصويره في استوديو CPC باستخدام كاميرا احترافية. تم إجراء عمليات المونتاج، إضافة مؤثرات بصرية، تغيير الخلفيات، وتصميم العناصر البصرية التوعوية باستخدام أحدث برامج أدوبي. الهدف من المشروع كان رفع الوعي بمتلازمة داون من خلال عرض مرئي احترافي وملهم.",
+  "features": [
+    "مونتاج احترافي برسالة إنسانية",
+    "إضافة مؤثرات بصرية (VFX)",
+    "تعديل الخلفية بما يناسب الرسالة",
+    "دمج موشن جرافيك مع لقطات حقيقية",
+    "إنتاج صوتي عالي الجودة"
+  ],
+  "challenges": [
+    "التعامل مع تصوير حقيقي في استوديو",
+    "تحقيق التوازن بين التأثير البصري والرسالة الإنسانية",
+    "تعديل الخلفيات بشكل واقعي باستخدام VFX",
+    "العمل على صوتيات تتماشى مع المحتوى التوعوي"
+  ],
+  "results": [
+    "فيديو توعوي بجودة عالية",
+    "وصول أوسع للجمهور المستهدف",
+    "إشادة من الفريق الطبي والجهات المعنية",
+    "نموذج يُحتذى به في إنتاج المحتوى الإنساني"
+  ],
+  "status": "مكتمل",
+  "year": "2019",
+  "gallery": [
+    "/mywork/lamiaa/WhatsApp Image 2025-07-31 at 17.25.06_63dfa91f.jpg",
+    "/mywork/lamiaa/WhatsApp Image 2025-07-31 at 17.28.19_fd1cc0c1.jpg",
+
+  ]
+      } ,
+      {
+  "id": 8,
+  "title": "أعمال تصميم وموشن جرافيكس لصفحة Devbile",
+  "description": "إنتاج محتوى بصري دعائي متكامل يشمل لوجوهات، موشن جرافيكس، تصميمات سوشيال ميديا، وهويات بصرية",
+  "image": "/mywork/devbile/logo.png",
+  "category": "graphic & motion design",
+  "technologies": [
+    "Adobe Illustrator",
+    "Adobe Photoshop",
+    "Adobe After Effects",
+    "Adobe Premiere Pro",
+    "Branding",
+    "Motion Graphics",
+    "Social Media Design",
+    "Script Writing"
+  ],
+  "liveUrl": "",
+  "githubUrl": "#",
+  "featured": false,
+  "client": "Devbile (مشروع شخصي في فترة Agency Experience)",
+  "duration": "2021-2022",
+  "role": "مصمم جرافيك ومحرر موشن وسيناريست",
+  "longDescription": "عملت خلال فترة تجربتي في وكالة صغيرة على مشروع Devbile، حيث قمت بتصميم محتوى بصري متكامل يتضمن هويات بصرية، شعارات، تصميمات سوشيال ميديا، ومقاطع موشن جرافيك. كما توليت كتابة السكربتات وصياغة الرسائل الدعائية بشكل يتماشى مع الطابع الشبابي الإبداعي للصفحة.",
+  "features": [
+    "تصميم شعارات وهوية بصرية متكاملة",
+    "مونتاج موشن جرافيك احترافي",
+    "تصميمات سوشيال ميديا جذابة",
+    "كتابة سكربتات إبداعية ترويجية",
+    "تنوع في أساليب التصميم والمحتوى"
+  ],
+  "challenges": [
+    "توحيد الهوية البصرية للمحتوى المتنوع",
+    "العمل تحت ضغط الوقت ومواكبة الترند",
+    "الدمج بين النص والإبداع البصري",
+    "تصميم محتوى موجه لجمهور متفاعل ومتطلب"
+  ],
+  "results": [
+    "محتوى إبداعي جذب تفاعل كبير على السوشيال ميديا",
+    "هويات بصرية واضحة ومتميزة",
+    "تعزيز وجود Devbile كعلامة مرئية مميزة",
+    "اكتساب خبرة قوية في مجال العمل داخل وكالة"
+  ],
+  "status": "مكتمل",
+  "year": "2022",
+  "gallery": [
+   "/mywork/devbile/logo.png"
+  ]
+}
+
+
     ]
   },
   "en": {
@@ -1095,7 +1195,56 @@ export const projectsData = {
      
           "/mywork/abdullah/عبدالله-ياسر-عبدالله-العلاوي.webp"
         ]
-      }
+      },
+      {
+  "id": 7,
+  "title": "Down Syndrome Awareness Promo Video",
+  "description": "Professional editing and production of a promotional video to raise public awareness about Down Syndrome",
+  "image": "/mywork/lamiaa/WhatsApp Image 2025-07-31 at 17.25.06_63dfa91f.jpg",
+  "category": "video editing",
+  "technologies": [
+    "Adobe Premiere Pro",
+    "After Effects",
+    "Photoshop",
+    "Illustrator",
+    "Adobe Audition",
+    "Motion Graphics",
+    "VFX"
+  ],
+  "liveUrl": "https://drive.google.com/drive/folders/1RJ0a1kSTAtLBkc-4pw3WU_JjGY4FgeiJ?usp=perview",
+  "githubUrl": "#",
+  "featured": false,
+  "client": "Dr. Lamiaa El Refaei",
+  "duration": "2019",
+  "role": "Video Editor & Producer",
+  "longDescription": "An awareness promo video filmed at CPC Studio using a professional camera setup. The project included full video editing, advanced visual effects, background replacement, and the design of awareness visual elements using Adobe's creative suite. The main objective was to deliver a powerful, inspiring message to raise awareness about Down Syndrome through high-quality visual storytelling.",
+  "features": [
+    "Professional editing with a human-centered message",
+    "Advanced visual effects (VFX)",
+    "Background replacement tailored to the message",
+    "Blending motion graphics with live-action footage",
+    "High-quality audio production"
+  ],
+  "challenges": [
+    "Working with live studio footage",
+    "Balancing visual impact with a meaningful message",
+    "Realistic background replacement using VFX",
+    "Audio design tailored for an awareness context"
+  ],
+  "results": [
+    "High-quality awareness video",
+    "Wider reach to the target audience",
+    "Positive feedback from the medical team and stakeholders",
+    "A reference model for impactful humanitarian media"
+  ],
+  "status": "Completed",
+  "year": "2019",
+  "gallery": [
+    "/mywork/lamiaa/WhatsApp Image 2025-07-31 at 17.25.06_63dfa91f.jpg",
+    "/mywork/lamiaa/WhatsApp Image 2025-07-31 at 17.28.19_fd1cc0c1.jpg"
+  ]
+}
+
     ]
   }
 };
